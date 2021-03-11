@@ -2,6 +2,7 @@ import "./App.css";
 import Profile from "./profile/Profile";
 import user1 from "./profile/conan_detective_tbs.jpg";
 import user2 from "./profile/p19054_t178_2020_1_002_000.jpg";
+import user3 from "./profile/elon_musk1.jpg";
 
 function App() {
   function handleName(name) {
@@ -34,6 +35,20 @@ function App() {
         <img
           style={{ borderRadius: "100%", width: "200px", height: "200px" }}
           src={user2}
+          alt="profpic"
+        />
+      </Profile>
+
+      <Profile
+        fullName="Elon Musk"
+        bio="Greeting, I am the founder, CEO, CTO, and chief designer of SpaceX; 
+        early investor, CEO, and product architect of Tesla."
+        profession="CEO of Tesla Motors"
+        handleName={handleName}
+      >
+        <img
+          style={{ borderRadius: "100%", width: "200px", height: "200px" }}
+          src={user3}
           alt="profpic"
         />
       </Profile>
